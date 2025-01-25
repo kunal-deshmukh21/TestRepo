@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Offer - Romax</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("x2iNhu-ik1U4ZXLRZ");
+        })();
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                  <img src="images/romax_logo.png" alt="Romax Logo" style="width: 150px; height: auto; display: block; margin: 0 auto;">
+                </a>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="exchange.html">Exchange</a>
+                <a href="demo.html">Demo</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header> -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- Logo Section -->
+            <a class="navbar-brand" href="index.html">
+              <img src="images/romax_logo1.png" alt="Romax Logo">
+            </a>
+            <!-- Navbar Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link " href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html"><i class="fas fa-box"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="exchange.html"><i class="fas fa-exchange-alt"></i> Exchange</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="demo.html"><i class="fas fa-laptop-code"></i> Demo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"><i class="fas fa-eye"></i> About Us</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <main class="form-container">
+        <div class="form-wrapper">
+            <h1>Exchange Your Old Purifier</h1>
+            <p class="form-description">Get attractive discounts when you exchange your old water purifier for a new one. Fill out the details below.</p>
+            
+            <form class="custom-form" id="exchangeForm">
+                <div class="form-group">
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location*</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="current_brand">Current Purifier Brand*</label>
+                    <input type="text" id="current_brand" name="current_brand" required>
+                </div>
+                <div class="form-group">
+                    <label for="current_model">Current Model</label>
+                    <input type="text" id="current_model" name="current_model">
+                </div>
+                <div class="form-group">
+                    <label for="purchase_year">Year of Purchase</label>
+                    <input type="number" id="purchase_year" name="purchase_year" min="2000" max="2024">
+                </div>
+                <div class="form-group">
+                    <label for="interested_product">Interested in Product*</label>
+                    <select id="interested_product" name="interested_product" required>
+                        <option value="">Select a Product</option>
+                        <option value="PureFlow Elite">PureFlow Elite</option>
+                        <option value="PureFlow Pro">PureFlow Pro</option>
+                        <option value="PureFlow Max">PureFlow Max</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Notes</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Exchange Request</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 PureFlow RO Water Purifiers. All Rights Reserved</p>
+    </footer>
+
+    <script src="js/exchange.js" type="module"></script>
+</body>
+</html>

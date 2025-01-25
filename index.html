@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RO Water Purifier Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                  <img src="images/romax_logo.png" alt="Romax Logo" style="width: 150px; height: auto; display: block; margin: 0 auto;">
+                </a>
+                </a>
+              </div>              
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="exchange.html">Exchange</a>
+                <a href="demo.html">Demo</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header> -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- Logo Section -->
+            <a class="navbar-brand" href="index.html">
+              <img src="images/romax_logo1.png" alt="Romax Logo">
+            </a>
+            <!-- Navbar Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html"><i class="fas fa-box"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="exchange.html"><i class="fas fa-exchange-alt"></i> Exchange</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="demo.html"><i class="fas fa-laptop-code"></i> Demo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><i class="fas fa-eye"></i> About Us</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="\images\banner.jpg?auto=format&fit=crop&w=1600" alt="Water Purifier 1">
+                <div class="slide-content">
+                    <h2>Pure Water, Pure Life</h2>
+                    <p>Advanced RO Technology for Your Family</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images\banner_2.png?auto=format&fit=crop&w=1600" alt="Water Purifier 2">
+                <div class="slide-content">
+                    <h2>Smart Purification</h2>
+                    <p>Next Generation Water Purifiers</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images\banner_3.jpg?auto=format&fit=crop&w=1600" alt="Water Purifier 3">
+                <div class="slide-content">
+                    <h2>Healthy Living</h2>
+                    <p>Experience the Difference of Pure Water</p>
+                </div>
+            </div>
+        </div>
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+        <div class="dots"></div>
+    </div>
+
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <div class="welcome-content">
+                <h2>WELCOME!</h2>
+                <h3>Alkaline RO Water</h3>
+                <div class="video-container">
+                    <video poster="images\poster.png?auto=format&fit=crop&w=800" controls>
+                        <source src="images\Romax_foresta_video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>PureFlow Alkaline RO can certainly be called a complete package as it removes all physical, chemical, and biological impurities. In addition, our purifier also adds essential minerals that are generally removed by RO plants during the purification process. Furthermore, it increases the dissolved oxygen, pH, and alkalinity of water.</p>
+            </div>
+            <div class="enquiry-form">
+                <h3>Send Us your Enquiry</h3>
+                <form id="enquiryForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="City" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images\foresta.jpg?auto=format&fit=crop&w=600" alt="Foresta">
+                <h2>Foresta</h2>
+                <a href="foresta-details.html" class="learn-more-btn">Read More</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images\brizo.jpg?auto=format&fit=crop&w=600" alt="Brizo">
+                <h2>Brizo</h2>
+                <a href="brizo-details.html" class="learn-more-btn">Read More</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images\nexton.jpg?auto=format&fit=crop&w=600" alt="Nexton">
+                <h2>Nexton</h2>
+                <a href="nexton-details.html" class="learn-more-btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 PureFlow RO Water Purifiers. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</body>
+</html>
